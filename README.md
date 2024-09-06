@@ -1,6 +1,7 @@
 <!-- 📽 [Tutorial Videos](https://www.youtube.com/playlist?list= ) </br> -->
 📖 [Documentation](https://cyberkoalastudios.github.io/VELESA-Documentation/) </br>
 
+[![Deploy to GitHub Pages](https://github.com/CyberKoalaStudios/VELESA-Documentation/actions/workflows/deploy.yml/badge.svg)](https://github.com/CyberKoalaStudios/VELESA-Documentation/actions/workflows/deploy.yml)
 
 
 ## VELESA Plugin
