@@ -23,7 +23,7 @@ const globalRehypePlugins = [
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: "VELESA Plugin",
-    tagline: "VELESA is the performant multiplayer gameplay framework",
+    tagline: "Performant multiplayer gameplay framework for Unreal Engine 5. Animationns, inventories and weapons.",
     organizationName: "CyberKoalaStudios", // Usually your GitHub org/user name.
     projectName: "VELESA-Documentation", // Usually your repo name.
     deploymentBranch: "gh-pages",
