@@ -1,0 +1,104 @@
+---
+sidebar_position: 4
+title: Blueprint Function Library
+---
+import {Step, Highlight} from '@site/src/lib/utils.mdx'
+
+## Get Projectile Launcher Component
+
+`Get Projectile Launcher Component` gets the VELESA Projectile Launcher component
+from an actor.
+* `Actor` : The actor from which to get the component.
+
+![Get Projectile Launcher Component](_static/img/bpfl/get-projectile-launcher-component.png)
+
+Returns `Projectile Launcher Component` or null if not found.
+
+## Cursor Aim
+
+`Cursor Aim` performs a trace collision query under the mouse cursor to detect
+where the player is aiming at.
+In case of a detected hit, also calculates the rotation needed to look at the
+impact point from the given origin.
+
+* `Aim Origin` : The location to aim from.
+* `Player Controller`  : Player controller that controls
+the cursor.
+* `Trace Channel`  : Collision channel to use for the trace.
+* `Trace Complex`  : True to test against complex collision,
+false to test against simplified collision.
+
+![Cursor Aim](_static/img/bpfl/cursor-aim.png)
+
+If the trace was successful, returns `Aim at Location` 
+the location of the impact point under the cursor,
+`Look at Rotation` the rotation needed to look at the impact
+point of a detected object the cursor is aiming at and
+`Hit Result`  the hit result of the line trace.
+
+## Camera Aim
+
+`Camera Aim` calculates the location and rotation of where the player controller
+is aiming at. The aim point is the center of the screen, but it can be any
+offset if needed.
+
+* `Aim Origin`  : The location to aim from.
+* `Player Controller`   : Player controller that controls
+the camera.
+* `Trace Distance` : The distance to trace from the screen
+position into the world.
+* `Trace Channel` : The collision channel to use for the trace.
+* `Trace Complex`  : True to test against complex collision,
+false to test against simplified collision.
+* `Actors to Ignore` : The list of actors to ignore during
+the trace.
+* `Screen Space Aim Coords` : The screen-space coordinates
+(0-1) for the trace starting point.
+
+![Camera Aim](_static/img/bpfl/camera-aim.png)
+
+If the trace was successful, returns `Aim at Location` 
+the location the camera is aiming at, `Look at Rotation`  
+the rotation needed to look at the impact point of a detected object the camera
+is aiming at and `Hit Result`  the hit result of the line trace.
+
+## Build Actor List
+
+`Build Actor List` builds a list of all actors attached to the given owner and
+its instigator. The owner and instigator will be included in this list.
+
+* `Owner`  : The owner from which to get all actors.
+
+![Build Actor List](_static/img/bpfl/build-actor-list.png)
+
+## Angle of Emergence
+
+`Angle of Emergence` calculates the angle of emergence (exit) in
+radians, representing the alignment of the velocity direction with the hit
+normal.
+
+* `Velocity` : Input velocity vector.
+* `Hit Normal`  : Input hit normal vector.
+
+![Angle of Emergence](_static/img/bpfl/angle-of-emergence.png)
+
+## Find Velocity Rotation
+
+`Find Velocity Rotation` finds worlds-space rotation from objects location and
+velocity.
+
+* `Location` : The starting location for the rotation
+calculation.
+* `Velocity`   : The velocity vector indicating the direction to
+look towards.
+
+![Find Velocity Rotation](_static/img/bpfl/find-velocity-rotation.png)
+
+## Find Actor Velocity Rotation
+
+`Find Actor Velocity Rotation` finds world-space absolute rotation of an actor
+based on its velocity XYZ.
+
+* `Target`   : The target actor used for the rotation calculation.
+
+![Find Actor Velocity Rotation](_static/img/bpfl/find-actor-velocity-rotation.png)
