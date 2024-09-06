@@ -3,7 +3,7 @@ sidebar_position: 1
 title: Item Actions
 ---
 
-import {Step} from '@site/src/lib/utils.mdx'
+ 
 
 :::note
 All of the item action functions should only be called with authority.
@@ -26,46 +26,46 @@ inventories ID.
 ## Equip Item
 
 `Equip Item` equips this item.
-* `Inventory Component` <Step text="1"/> : Inventory component of an actor that
+* `Inventory Component`   : Inventory component of an actor that
 equips this item.
-* `Slot` <Step text="2"/> : Slot into which one to equip the item.
-* `Visible` <Step text="3"/> : If true will make item visible.
+* `Slot`  : Slot into which one to equip the item.
+* `Visible : If true will make item visible.
 
 ![Equip Item](_static/img/item-actions/equip-item.png)
 
 ## Unequip Item
 
 `Unequip Item` unequips this item.
-* `Inventory Component` <Step text="1"/> : Inventory component of an actor that
+* `Inventory Component`  : Inventory component of an actor that
 unequips this item.
-* `Slot` <Step text="2"/> : Slot from which one to unequip the item.
+* `Slot`  : Slot from which one to unequip the item.
 
 ![Unequip Item](_static/img/item-actions/unequip-item.png)
 
 ## Use Item
 
 `Use Item` uses this item.
-* `Inventory Component` <Step text="1"/> : Inventory component of an actor that
+* `Inventory Component`   : Inventory component of an actor that
 uses this item.
-* `Action Type` <Step text="2"/> : Type of action to call on this item.
+* `Action Type`  : Type of action to call on this item.
 
 ![Use Item](_static/img/item-actions/use-item.png)
 
 ## Drop Item
 
 `Drop Item` drops this item.
-* `Inventory Component` <Step text="1"/> : Inventory component of an actor that
+* `Inventory Component`  : Inventory component of an actor that
 drops this item.
-* `Drop Location` <Step text="2"/> : Items location after it is dropped.
-* `Drop Rotation` <Step text="3"/> : Items rotation after it is dropped.
-* `Clear Owner` <Step text="4"/> : If true clear items owner ID.
+* `Drop Location`  : Items location after it is dropped.
+* `Drop Rotation` : Items rotation after it is dropped.
+* `Clear Owner` : If true clear items owner ID.
 
 ![Drop Item](_static/img/item-actions/drop-item.png)
 
 ## Destroy Item
 
 `Destroy Item` destroys this item.
-* `Inventory Component` <Step text="1"/> : Inventory component of an actor that
+* `Inventory Component` : Inventory component of an actor that
 destroys this item.
 
 ![Destroy Item](_static/img/item-actions/destroy-item.png)

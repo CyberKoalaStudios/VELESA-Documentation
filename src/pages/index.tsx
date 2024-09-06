@@ -14,12 +14,13 @@ function HomepageHeader() {
             <div className="container">
                 <h1 className="hero__title">{siteConfig.title}</h1>
                 <p className="hero__subtitle">{siteConfig.tagline}</p>
-                <img src={require('@site/static/img/VELESA_LOGO.jpg').default} alt={"VELESA Logo"} style={{height:'352px', borderRadius: '10px', border: '1px solid #ddd'}}/>
+                <img src={require('@site/static/img/VELESA_LOGO.jpg').default} alt={"VELESA Logo"} style={{height:'352px', borderRadius: '10px', border: '2px solid #ddd'}}/>
+                <div className="" style={{marginBottom: '3rem'}}></div>
                 <div className={styles.buttons} >
                     <Link
                         className="button button--secondary button--lg"
                         to="/docs/getting-started/introduction">
-                        Learn more
+                        Getting Started
                     </Link>
                 </div>
             </div>

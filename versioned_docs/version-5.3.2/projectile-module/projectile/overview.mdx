@@ -3,7 +3,7 @@ sidebar_position: 1
 title: Overview
 ---
 
-import {Step} from '@site/src/lib/utils.mdx'
+ 
 
 The `VELESA Projectile` actor has the ability to ricochet and penetrate objects
 depending on the projectile's properties as well as the *Physical Material* of hit
@@ -40,7 +40,7 @@ no need for checking authority nor using RPCs.
 (velocity is below simulation threshold, bounces are disabled, or it is forcibly
 stopped).
 
-* `Hit Result` <Step text="1"/> : The last hit result of the projectile.
+* `Hit Result`  : The last hit result of the projectile.
 
 ![On Projectile Terminal Hit](_static/img/overview/on-projectile-terminal-hit.png)
 
@@ -48,15 +48,15 @@ stopped).
 
 `On Projectile Ricocheted` called when the projectile has ricocheted (bounced).
 
-* `Velocity` <Step text="1"/> : The velocity of the projectile.
-* `Hit Result` <Step text="2"/> : The hit result of the projectile.
-* `Bounces` <Step text="3"/> : The number of bounces that the projectile has
+* `Velocity` : The velocity of the projectile.
+* `Hit Result` : The hit result of the projectile.
+* `Bounces`  : The number of bounces that the projectile has
 already made.
-* `Ricochet Result` <Step text="4"/> : [The ricochet result](/docs/projectile-module/types#ricochet-result)
+* `Ricochet Result`  : [The ricochet result](/docs/projectile-module/types#ricochet-result)
 data the ricochet was based on.
-* `Hit Transform` <Step text="5"/> : The calculated hit transform of the
+* `Hit Transform`  : The calculated hit transform of the
 projectile. See: [CalculateHitTransform()](/docs/projectile-module/projectile/functions#calculate-hit-transform).
-* `Bounce Transform` <Step text="6"/> : The calculated bounce transform of the
+* `Bounce Transform`  : The calculated bounce transform of the
 projectile. See: [CalculateBounceTransform()](/docs/projectile-module/projectile/functions#calculate-bounce-transform).
 
 ![On Projectile Ricocheted](_static/img/overview/on-projectile-ricocheted.png)
@@ -65,10 +65,10 @@ projectile. See: [CalculateBounceTransform()](/docs/projectile-module/projectile
 
 `On Projectile Penetrated` called when the projectile has penetrated an object.
 
-* `Velocity` <Step text="1"/> : The velocity of the projectile.
-* `Entry Hit Result` <Step text="2"/> : The hit result of the projectile on
+* `Velocity`   : The velocity of the projectile.
+* `Entry Hit Result` : The hit result of the projectile on
 entry.
-* `Penetration Result` <Step text="3"/> : [The penetration result](/docs/projectile-module/types#penetration-result)
+* `Penetration Result` : [The penetration result](/docs/projectile-module/types#penetration-result)
 data the penetration was based on.
 
 ![On Projectile Penetrated](_static/img/overview/on-projectile-penetrated.png)

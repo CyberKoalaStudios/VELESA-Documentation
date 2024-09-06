@@ -3,7 +3,7 @@ sidebar_position: 1
 title: Overview
 ---
 
-import {Step} from '@site/src/lib/utils.mdx'
+ 
 
 The `VELESA Item Component` allows to turn any actor into an item that works in
 single and multiplayer scenarios.
@@ -51,8 +51,8 @@ no need for checking authority nor using RPCs.
 ### On Item Changed Visibility
 
 `On Item Changed Visibility` event will be called when the item visibility changed.
-* `Visibility` <Step text="1"/> : If true item became visible, otherwise false.
-* `Simulate Physics` <Step text="2"/> : If true item started simulating physics,
+* `Visibility`  : If true item became visible, otherwise false.
+* `Simulate Physics`  : If true item started simulating physics,
 otherwise false.
 
 ![On Item Changed Visibility](_static/img/overview/on-item-changed-visibility.png)
@@ -60,7 +60,7 @@ otherwise false.
 ### On Item Picked Up
 
 `On Item Picked Up` event will be called when the item was picked up.
-* `Inventory Component` <Step text="1"/> : Inventory component of an actor that
+* `Inventory Component`   : Inventory component of an actor that
 picked up this item.
 
 ![On Item Picked Up](_static/img/overview/on-item-picked-up.png)
@@ -68,36 +68,36 @@ picked up this item.
 ### On Item Equipped
 
 `On Item Equipped` event will be called when the item was equipped.
-* `Inventory Component` <Step text="1"/> : Inventory component of an actor that
+* `Inventory Component`  : Inventory component of an actor that
 equipped this item.
-* `Equipment Slot` <Step text="2"/> : Slot into which one the item was equipped.
+* `Equipment Slot` : Slot into which one the item was equipped.
 
 ![On Item Equipped](_static/img/overview/on-item-equipped.png)
 
 ### On Item Unequipped
 
 `On Item Unequipped` event will be called when the item was unequipped.
-* `Inventory Component` <Step text="1"/> : Inventory component of an actor that
+* `Inventory Component`   : Inventory component of an actor that
 unequipped this item.
-* `Equipment Slot` <Step text="2"/> : Slot from which one the item was unequipped.
+* `Equipment Slot`   : Slot from which one the item was unequipped.
 
 ![On Item Unequipped](_static/img/overview/on-item-unequipped.png)
 
 ### On Item Used
 
 `On Item Used` event will be called when the item was used.
-* `Inventory Component` <Step text="1"/> : Inventory component of an actor that
+* `Inventory Component`  : Inventory component of an actor that
 used this item.
-* `Action Type` <Step text="2"/> : Type of action that was called on this item.
+* `Action Type` : Type of action that was called on this item.
 
 ![On Item Used](_static/img/overview/on-item-used.png)
 
 ### On Item Dropped
 
 `On Item Dropped` event will be called when the item was dropped.
-* `Inventory Component` <Step text="1"/> : Inventory component of an actor that
+* `Inventory Component`  : Inventory component of an actor that
 dropped this item.
-* `Drop Location` <Step text="2"/> : Items location where it was dropped.
+* `Drop Location`  : Items location where it was dropped.
 
 ![On Item Dropped](_static/img/overview/on-item-dropped.png)
 
