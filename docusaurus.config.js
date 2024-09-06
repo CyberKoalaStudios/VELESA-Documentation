@@ -22,7 +22,7 @@ const globalRehypePlugins = [
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: "CYBERKOALA's VELESA Plugin",
+    title: "CYBERKOALA VELESA Plugin",
     tagline: "VELESA is the performant multiplayer gameplay framework",
     organizationName: "CyberKoalaStudios", // Usually your GitHub org/user name.
     projectName: "VELESA-Documentation", // Usually your repo name.
