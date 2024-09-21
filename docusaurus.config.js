@@ -22,8 +22,8 @@ const globalRehypePlugins = [
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: "CYBERKOALA VELESA Plugin",
-    tagline: "VELESA is the performant multiplayer gameplay framework",
+    title: "VELESA Plugin",
+    tagline: "Performant multiplayer gameplay framework for Unreal Engine 5. Animationns, inventories and weapons.",
     organizationName: "CyberKoalaStudios", // Usually your GitHub org/user name.
     projectName: "VELESA-Documentation", // Usually your repo name.
     deploymentBranch: "gh-pages",
@@ -164,15 +164,15 @@ const config = {
                         ],
                     },
 
-                    {
-                        title: "Unreal Marketplace",
-                        items: [
-                            {
-                                label: "CYBERKOALA VELESA Plugin",
-                                href: urlUnrealMarketplaceProduct_VELESA,
-                            },
-                        ],
-                    },
+                    //{
+                        //title: "Unreal Marketplace",
+                        //items: [
+                            //{
+                                //label: "CYBERKOALA VELESA Plugin",
+                                //href: urlUnrealMarketplaceProduct_VELESA,
+                            //},
+                        //],
+                    //},
 
                     {
                         title: "More",
