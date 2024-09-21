@@ -164,15 +164,15 @@ const config = {
                         ],
                     },
 
-                    //{
-                        //title: "Unreal Marketplace",
-                        //items: [
-                            //{
-                                //label: "CYBERKOALA VELESA Plugin",
-                                //href: urlUnrealMarketplaceProduct_VELESA,
-                            //},
-                        //],
-                    //},
+                    {
+                        title: "FAB Marketplace",
+                        items: [
+                            {
+                                label: "VELESA",
+                                href: urlUnrealMarketplaceProduct_VELESA,
+                            },
+                        ],
+                    },
 
                     {
                         title: "More",
