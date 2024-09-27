@@ -5,7 +5,7 @@ const lightCodeTheme = require("prism-react-renderer").themes.github;
 const darkCodeTheme = require("prism-react-renderer").themes.dracula;
 
 const urlWebsite = "https://cyberkoalastudios.com/";
-const urlUnrealMarketplaceProduct_VELESA = "https://www.fab.com/portal/listings/ef88c849-770b-4b9c-b8a2-a8a5fe162b6b/";
+const urlUnrealMarketplaceProduct_VELESA = "https://www.fab.com/listings/840bd725-eec9-4c06-95cc-46a5c20e04fb";
 const urlDiscordInviteLink = "https://discord.gg/";
 const urlGitHubRepository = "https://github.com/CyberKoalaStudios/VELESA-Documentation";
 const urlGitHubIssueTracker = `${urlGitHubRepository}/issues`;
